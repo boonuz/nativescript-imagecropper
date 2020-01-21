@@ -1,4 +1,5 @@
-import { Frame, ImageSource } from '@nativescript/core';
+import { topmost } from 'tns-core-modules/ui/frame';
+import { ImageSource } from 'tns-core-modules/image-source';
 import { OptionsAndroid, OptionsCommon, Result } from './';
 
 let _options: OptionsCommon;
@@ -106,7 +107,7 @@ export class ImageCropper {
         delegate.initResolveReject(resolve, reject);
         CFRetain(delegate);
         viewController.delegate = delegate;
-        let vc = Frame.topmost().ios.controller;
+        let vc = topmost().ios.controller;
         let page = null;
         while (vc.presentedViewController
             && vc.presentedViewController.viewLoaded) {

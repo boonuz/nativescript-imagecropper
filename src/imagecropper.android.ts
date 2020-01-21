@@ -1,5 +1,9 @@
-import { Application, Color, Folder, ImageSource, knownFolders, path } from '@nativescript/core';
-import { AndroidApplication } from '@nativescript/core/application'
+import { knownFolders, Folder, path } from "tns-core-modules/file-system";
+import { ImageSource } from 'tns-core-modules/image-source';
+import { Color } from 'tns-core-modules/color/color';
+import { AndroidApplication } from 'tns-core-modules/application';
+import * as Application from "tns-core-modules/application";
+
 import { OptionsAndroid, OptionsCommon, Result } from './';
 
 let _options: OptionsCommon;

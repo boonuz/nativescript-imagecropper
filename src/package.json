@@ -88,9 +88,9 @@
     "homepage": "https://github.com/bthurlow/nativescript-imagecropper",
     "readmeFilename": "README.md",
     "devDependencies": {
-        "@nativescript/core": "^6.3.2",
         "rimraf": "^2.5.0",
         "tns-platform-declarations": "^6.2.0",
+        "tns-core-modules": "6.0.1",
         "tslint": "^5.0.0",
         "typescript": "~3.4.0"
     },
